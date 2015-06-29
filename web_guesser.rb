@@ -2,8 +2,6 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 SECRET_NUMBER = Random.rand(3)
-message       = nil
-answer        = nil
 
 def check_guess(guess)
   if guess.to_i > SECRET_NUMBER
